@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <div id="color-mode-switch" class="toggle-container">
+            <p id="mode-text">Light Mode</p>
+            <div id="toggle-switch" class="input-toggle-switch">
+                <div id="circle" class="input-toggle-circle"></div>
+            </div>
+        </div>
+        <header class="header-container">
+            <h1 class="header-h1">Metric/Imperial Unit Conversion</h2>
+            <input class="input" type="text" placeholder="20">
+            <button id="convert-btn" class="btn">Convert</button>
+        </header>
+        <main id="main-container" class="main-container">
+            <div class="main-card">
+                <h2 class="main-unit-h2">Length (Meter/Feet)</h2>
+                <p id="length-conversions-el" class="conversion-p">20 meters = 65.620 feet | 20 feet = 6.096 meters</p>
+            </div>
+            <div id="main-card" class="main-card">
+                <h2 class="main-unit-h2">Volume (Liters/Gallons)</h2>
+                <p id="volume-conversions-el" class="conversion-p">20 liters = 5.280 gallons | 20 gallons = 75.758 liters</p> 
+            </div>
+            <div class="main-card">
+                <h2 class="main-unit-h2">Mass (Kilograms/Pounds)</h2>
+                <p id="mass-conversions-el" class="conversion-p">20 kilograms = 44.080 pounds | 20 pounds = 9.074 kilograms</p>
+            </div>
+        </main>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
